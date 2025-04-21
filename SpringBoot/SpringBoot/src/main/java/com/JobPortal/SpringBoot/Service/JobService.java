@@ -24,6 +24,14 @@ public void addjob(JobPost jobPost){
 public List<JobPost> getallJobs(){
 return repo.getallJobs();
 }
+
+public void updateJob(JobPost jobpost) {
+    repo.updateJob(jobpost);
+}
+public void deleteJob(int postId) {
+    repo.deleteJob(postId);
+}
+
     
 
 }
