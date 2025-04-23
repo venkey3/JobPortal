@@ -39,6 +39,8 @@ public class JobController {
     //     return "success";
     // }
 
+
+
     @GetMapping("jobPosts")
     public List<JobPost> getallJobs()
     {
@@ -65,5 +67,11 @@ public class JobController {
         service.deleteJob(postId);
                 return "deleted";
     }
+
+    @GetMapping("/load")
+        public void load(){
+            service.load();
+        }
+    
 
 }
